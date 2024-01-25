@@ -1,0 +1,197 @@
+---
+title: "Pengaruh Transportasi Udara Nasional Terhadap Perkembangan kunjungan Wisatawan Mancanegara  Di indonesia pada tahun 2022"
+subtitle: "Metode Penelitian Politeknik APP Jakarta"
+author: "Gracia Natalie Riswinanda"
+date: 2024-01-24
+number-sections: true
+format:
+  html: default
+  docx: default
+editor: visual
+---
+
+![](poltekapp.jpg){fig-align="center"}
+
+## Pendahuluan
+
+![](images/lt5ffe5ba487113-01.jpg){fig-align="center" width="300"}
+
+### Latar belakang
+
+Dalam era globalisasi yang terus berkembang, transportasi udara nasional berperan penting dalam mendukung pertumbuhan sektor pariwisata dan memacu perkembangan infrastruktur menjadi semakin nyata. Konektivitas yang handal dan terintegrasi adalah elemen kunci yang tidak hanya memudahkan pergerakan wisatawan, tetapi juga membentuk pola distribusi ekonomi dan memicu pertumbuhan sektor terkait.
+
+Sementara dampak positifnya terlihat jelas, masih ada kebutuhan mendalam untuk memahami dinamika kompleks antara transportasi nasional, perkembangan pariwisata, dan transformasi infrastruktur secara holistik. Faktor-faktor seperti investasi dalam transportasi, kebijakan pengembangan pariwisata, dan integrasi infrastruktur perlu dianalisis secara mendalam untuk merinci sejauh mana transportasi nasional memberikan kontribusi pada pertumbuhan ekonomi dan kemajuan nasional.
+
+Penelitian ini hadir sebagai upaya untuk mengisi celah pengetahuan tersebut, menyoroti keterkaitan erat antara transportasi nasional dan perkembangan pariwisata, serta dampaknya pada kemajuan pendapatan ekonomi nasional. Dengan pemahaman yang lebih dalam, diharapkan penelitian ini dapat memberikan dasar pengetahuan yang kokoh untuk perumusan kebijakan yang tepat dan berkelanjutan, membawa dampak positif pada pertumbuhan sektor pariwisata dan kemajuan keseluruhan negara.
+
+![](images/i-01.jpg){fig-align="center" width="351"}
+
+### Ruang lingkup
+
+Dalam penelitian ini penulis mengambil objek penelitian dari Badan Pusat Statistik (BPS). Ruang lingkup penelitian ini terdapat 2 variabel antara lain Data yang penulis gunakan adalah data yang bersifat time series yaitu masing-masing data diambil pada bulan januari-desember pada tahun 2022 dengan satuan jumlah orang, data inilah yang kemudian menjadi objek penelitian.
+
+### Rumusan masalah
+
+Yang menjadi fokus utama pada penelitian ini berdasarkan uraian latar belakang yang ada adalah:
+
+1.  Apakah transportasi Udara nasional mempengaruhi pertumbuhan jumlah kunjungan wisatawan mancanegara yang berkunjung ke indonesia?
+
+2.  Apa dampak pertumbuhan kunjungan wisatawan mancanegara potensinya dalam meningkatkan pendapatan ekonomi nasional?
+
+3.  Apakah transportasi udara nasional berpengaruh besar terhadap angka perkembangan wisatawan mancanegara yang datang ke indonesia?
+
+### Tujuan dan manfaat penelitian
+
+Berdasarkan latar belakang dan permasalahan yang ada maka tujuan dari penelitian ini adalah untuk mengetahui pengaruh transportasi udara nasional terhadap perkembangan Pariwisata dan mengetahui bahwa transportasi nasional dan perkembangan Pariwisata dalam meningkatkan pendapatan ekonomi nasional.
+
+Adapun manfaat dari penelitian ini antara lain:
+
+1\. Manfaat Teoritis
+
+Penelitian ini diharapkan dapat menjadi ilmu pengetahuan tentang bagaimana faktor-faktor dalam transportasi nasional berkontribusi terhadap pertumbuhan sektor pariwisata dan sebaliknya dan penelitian ini dapat memberikan kontribusi memberikan bantuan pemikiran dan menjadi ilmu pengetahuan bagi para pembaca untuk menambah wawasan dibidang pariwisata dan ekonomi nasional.
+
+2\. Manfaat Praktis
+
+a\. Bagi Penulis
+
+Penulis dapat memberikan kontribusi pada literatur ilmiah dengan menyajikan temuan dan analisis baru yang dapat memperkaya pemahaman tentang hubungan antara transportasi nasional, perkembangan pariwisata, dan infrastruktur. Dan diharapkan penelitian ini juga dapat menjadi referensi bagi setiap penulis yang ingin mengetahui penelitian menggunakan sistem regresi melalui R Studio.
+
+b\. Bagi instansi
+
+Hasil penelitian dapat membantu instansi dalam mengembangkan kebijakan baru dan rencana strategis jangka panjang yang menggabungkan transportasi nasional dengan pengembangan pariwisata, memaksimalkan potensi pertumbuhan ekonomi dan sosial nasional.
+
+### Package
+
+Ini tidak wajib ada di packages yang digunakan antara lain sebagai berikut:
+
+`{library('tidyverse')} library('readxl') library('dplyr')`
+
+## Studi pustaka
+
+1.  Transportasi Nasional
+
+Menurut ahli Transportasi Udara Stephen H. Lichtenstein mendefinisikan transportasi udara sebagai "proses perpindahan orang atau barang dari satu tempat ke tempat lain menggunakan pesawat udara, yang melibatkan penerbangan di udara dengan menggunakan pesawat terbang, helikopter, atau pesawat udara lainnya."
+
+Transportasi udara nasional adalah sistem transportasi udara yang mencakup seluruh jaringan dan operasi penerbangan di dalam suatu negara. Ini melibatkan semua kegiatan penerbangan yang terjadi di wilayah negara tersebut, termasuk penerbangan domestik antar kota atau daerah, penerbangan internasional yang beroperasi dari dan ke negara tersebut, serta pengelolaan bandar udara dan fasilitas penerbangan lainnya di tingkat nasional.
+
+2.  Kunjungan wisatawan mancanegara
+
+Kunjungan wisatawan mancanegara merujuk pada kegiatan perjalanan atau kunjungan yang dilakukan oleh individu atau kelompok wisatawan yang berasal dari negara lain ke suatu destinasi atau negara tertentu. Ini mencakup berbagai kegiatan wisata seperti liburan, perjalanan bisnis, kegiatan konferensi, atau tujuan pendidikan.
+
+Kunjungan wisatawan mancanegara cukup penting dalam pergerakan ekonomi nasional, inilah beberapa pandangan ahli dibidang ekonomi dan pariwisata yang mendukung pernyataan tersebut melibatkan berbagai aspek, yaitu:
+
+1\. Pendapatan dan Pengeluaran Wisatawan: Menurut ahli ekonomi, kunjungan wisatawan mancanegara membawa masuk pendapatan yang signifikan ke suatu negara melalui pengeluaran mereka untuk akomodasi, makanan, transportasi, dan berbagai kegiatan pariwisata. Hal ini dapat memberikan dorongan penting pada pertumbuhan ekonomi nasional.
+
+2\. Penciptaan Lapangan Kerja: Kunjungan wisatawan mancanegara dapat menciptakan pekerjaan langsung dan tidak langsung di sektor-sektor terkait, seperti hotel, restoran, transportasi, dan industri kreatif yang terkait dengan pariwisata.
+
+3\. Promosi dan Pemberdayaan Lokal: Ahli pariwisata sering menekankan bahwa kunjungan wisatawan mancanegara dapat memberikan peluang untuk mempromosikan dan mengembangkan destinasi wisata tertentu. Peningkatan pariwisata juga dapat memberdayakan komunitas lokal melalui partisipasi dalam bisnis pariwisata.
+
+## Metode penelitian
+
+### Data
+
+| Bulan     | Penumpang Pesawat Mancanegara ke Indonesia (X) | Kunjungan Wisatawan Mancanegara ke Indonesia (Y) |
+|-------------------|---------------------------|--------------------------|
+| Januari   | 83585                                          | 136298                                           |
+| Februari  | 101829                                         | 117509                                           |
+| Maret     | 187832                                         | 158629                                           |
+| April     | 291265                                         | 230076                                           |
+| Mei       | 466902                                         | 354920                                           |
+| Juni      | 538852                                         | 483883                                           |
+| Juli      | 611192                                         | 645121                                           |
+| Agustus   | 804693                                         | 670509                                           |
+| September | 892915                                         | 700606                                           |
+| Oktober   | 947091                                         | 734228                                           |
+| November  | 901190                                         | 704783                                           |
+| Desember  | 1030773                                        | 952469                                           |
+
+penelitian ini menggunakan data sekunder dengan bentuk data time series pada bulan januari-desember tahun 2022, data yang dipakai ialah data yang telah diolah bersumber dari Badan Pusat Statistik (BPS).
+
+```{r}
+setwd("D:/jurna metop")
+library('dplyr')
+reg1<-lm(X~y,data=dat)
+summary(reg1)
+ggplot(data=dat,aes(x=X,y=y)) + geom_point (color="blue",size=2) + labs(title="tabel. Penumpang mancanegara dan Kunjungan Wisatawan 2022", x="Penumpang Pesawat mancanegara ke Indonesia", y="Kunjungan Wisatawan Mancanegara ke Indonesia", caption = "sumber : Badan Pusat Statistik") + theme_classic()
+
+```
+
+![](images/Rplot.png)
+
+### Metode analisis
+
+Metode yang dipilih adalah regresi univariat atau Ordinary Least Square (OLS) dengan 1 variabel independen. Penelitian ini bermaksud mencari hubungan antara Penumpang Pesawat Mancanegara ke Indonesia (X) dan Kunjungan Wisatawan Mancanegara ke Indonesia (Y). Spesifikasi yang dilakukan adalah:
+
+$$
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+$$ di mana $y_t$ adalah Penumpang Pesawat Mancanegara ke Indonesia (X) dan $x_t$ adalah Kunjungan Wisatawan Mancanegara ke Indonesia (Y).
+
+## Pembahasan
+
+### Pembahasan masalah
+
+Pada bagian ini dapat ditampilkan data dan visualisasi data yang telah dikumpulkan.
+
+`{#import dataset} library(readxl)  dat<-read_excel('data var.xlsx')  head(dat)`
+
+```         
+# A tibble: 12 × 3   
+Bulan         X      y   
+<chr>     <dbl>  <dbl> 
+1 Januari   83585 136298 
+2 Februari 101829 117509 
+3 Maret    187832 158629 
+4 April    291265 230076 
+5 Mei      466902 354920 
+6 Juni     538852 483883
+7 Juli     611192 645121
+8 Agustus  804693 670509
+9 September892915 700606
+10 Oktober 947091 734228
+11 November901190 704783
+12 Desember1030773 952469
+```
+
+Keterangan :
+
+X = Penumpang Pesawat Mancanegara ke Indonesia
+
+Y = Kunjungan Wisatawan Mancanegara ke Indonesia
+
+### Analisis masalah
+
+Hasil regresinya adalah :
+
+`{reg1<-lm(X~y,data=dat)} summary(reg1)`
+
+```         
+Call: 
+lm(formula = X ~ y, data = dat)  
+
+Residuals:     Min      1Q  Median      3Q     Max  -144951  -34326   15872   60994   84372   
+
+Coefficients:               
+              Estimate Std. Error t value Pr(>|t|)     
+(Intercept) -1.546e+04  4.521e+04  -0.342     0.74     
+y            1.196e+00  8.065e-02  14.830  3.9e-08 *** 
+--- 
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1  
+
+Residual standard error: 75660 on 10 degrees of freedom Multiple R-squared:  0.9565,    Adjusted R-squared:  0.9522  F-statistic: 219.9 on 1 and 10 DF,  p-value: 3.9e-08
+```
+
+## Kesimpulan
+
+Berdasarkan hasil regresi yang telah dibuat, dapat dilihat bahwa setiap kenaikan jumlah penumpang pesawat dari mancanegara sebesar 1, maka jumlah kunjungan wisatawan mancanegara ke indonesia meningkat sebesar 1.196. Dari hasil regresi tersebut dapat dipastikan transportasi udara nasional mampu menaikkan jumlah wisatawan mancanegara untuk berkunjung ke indonesia.
+
+Transportasi udara nasional berpengaruh cukup besar terhadap angka perkembangan wisatawan mancanegara yang datang ke indonesia. Dengan bertumbuhnya angka wisatawan mancanegara yang berkunjung ke indonesia dapat meningkatkan pendapatan negara melalui kegiatan-kegiatan pariwisata yang mereka lakukan, serta berpengaruh terhadap perkembangan infrastruktur diindonesia ke arah yang lebih berkembang. Dapat disimpulkan bahwa pengaruh dua variabel ini menuju kearah yang positif yaitu dapat meningkatkan pertumbuhan ekonomi nasional.
+
+## Referensi
+
+[Badan Pusat Statistik Indonesia. (2 Januari 2024). *Jumlah Penumpang Pesawat di Bandara Utama*. Diakses pada 24 Januari 2024, dari https://www.bps.go.id/id/statistics-table/2/NjYjMg%3D%3D/jumlah-penumpang-pesawat-di-bandara-utama.html](Badan%20Pusat%20Statistik%20Indonesia.%20(2%20Januari%202024).%20Jumlah%20Penumpang%20Pesawat%20di%20Bandara%20Utama.%20Diakses%20pada%2024%20Januari%202024,%20dari%20https://www.bps.go.id/id/statistics-table/2/NjYjMg%3D%3D/jumlah-penumpang-pesawat-di-bandara-utama.html)
+
+[Badan Pusat Statistik Indonesia. (1 Oktober 2021). *Perkembangan Pariwisata dan Transportasi Nasional Bulan Agustus 2021*. Diakses pada 24 Januari 2024, dari https://www.bps.go.id/id/pressrelease/2021/10/01/1804/perkembangan-pariwisata-dan-transportasi-nasional-bulan-agustus-2021.html](Badan%20Pusat%20Statistik%20Indonesia.%20(1%20Oktober%202021).%20Perkembangan%20Pariwisata%20dan%20Transportasi%20Nasional%20Bulan%20Agustus%202021.%20Diakses%20pada%2024%20Januari%202024,%20dari%20https://www.bps.go.id/id/pressrelease/2021/10/01/1804/perkembangan-pariwisata-dan-transportasi-nasional-bulan-agustus-2021.html)
+
+[*Multivariat & Dummy regression*. (n.d.). Retrieved January 24, 2024, from https://www.krisna.or.id/metopel/meeting3/index.html#/bandingkan-2-model](Multivariat%20&%20Dummy%20regression.%20(n.d.).%20Retrieved%20January%2024,%202024,%20from%20https://www.krisna.or.id/metopel/meeting3/index.html#/bandingkan-2-model)
+
+[Badan Pusat Statistik Indonesia. (5 Januari 2024). *Jumlah Kunjungan Wisatawan Mancanegara per bulan ke Indonesia Menurut Pintu Masuk, 2017 - sekarang*. Diakses pada 24 Januari 2024, dari https://www.bps.go.id/id/statistics-table/2/MTE1MCMy/jumlah-kunjungan-wisatawan-mancanegara-per-bulan-ke-indonesia-menurut-pintu-masuk\--2017\-\--sekarang.html](Badan%20Pusat%20Statistik%20Indonesia.%20(5%20Januari%202024).%20Jumlah%20Kunjungan%20Wisatawan%20Mancanegara%20per%20bulan%20ke%20Indonesia%20Menurut%20Pintu%20Masuk,%202017%20-%20sekarang.%20Diakses%20pada%2024%20Januari%202024,%20dari%20https://www.bps.go.id/id/statistics-table/2/MTE1MCMy/jumlah-kunjungan-wisatawan-mancanegara-per-bulan-ke-indonesia-menurut-pintu-masuk--2017---sekarang.html)
